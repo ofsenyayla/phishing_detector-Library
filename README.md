@@ -60,11 +60,11 @@ detector = Detector(api_key)
 url_list = ["https://www.google.com", "https://www.facebook.com"]
 
 # it creates the output file and saves the results in this file
-detector.query_by_file(url_list, output_file="output.csv")
+detector.query_by_list(url_list, output_file="output.csv")
 
 # to query the urls inside a list, multithreading is used to speed up the process
 # by default, max_workers is set to 10, but you can change it
-detector.query_by_file(url_list, output_file="output.csv", max_workers=20)
+detector.query_by_list(url_list, output_file="output.csv", max_workers=20)
 ```
 
 ### Requirements
