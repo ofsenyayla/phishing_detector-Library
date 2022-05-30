@@ -1,2 +1,4 @@
 *.pyc
 __pycache__/
+dist
+phishing_detector.egg-info/*
